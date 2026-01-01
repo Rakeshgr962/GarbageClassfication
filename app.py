@@ -19,7 +19,7 @@ def classify_image(image):
     # Predict
     predictions = model.predict(img_array)[0]
     return {class_names[i]: float(predictions[i]) for i in range(len(class_names))}
-
+    
 # Build Gradio UI
 demo = gr.Interface(
     fn=classify_image,
@@ -31,3 +31,4 @@ demo = gr.Interface(
 
 # Launch the web app
 demo.launch()
+
