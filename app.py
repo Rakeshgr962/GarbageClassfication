@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 
-# Load your trained EfficientNetB0 model
+# Load your trained EfficientNetB0 model.
 model = tf.keras.models.load_model("EfficientNetB0.keras")
 
 # Class names (replace if you used different labels/order)
@@ -31,3 +31,4 @@ demo = gr.Interface(
 
 # Launch the web app
 demo.launch()
+
