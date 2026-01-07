@@ -31,4 +31,3 @@ demo = gr.Interface(
 
 # Launch the web app
 demo.launch()
-
