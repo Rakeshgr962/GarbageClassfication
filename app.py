@@ -8,7 +8,6 @@ model = tf.keras.models.load_model("EfficientNetB0.keras")
 
 # Class names (replace if you used different labels/order)
 class_names = ['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
-
 # Define the prediction function
 def classify_image(image):
     # Resize to match input shape
@@ -31,3 +30,4 @@ demo = gr.Interface(
 
 # Launch the web app
 demo.launch()
+
